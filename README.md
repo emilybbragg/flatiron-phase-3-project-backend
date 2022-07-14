@@ -1,5 +1,19 @@
 # Phase 3 Project Guidelines
 
+## Blog code to be added
+
+`newVariable`
+`new_variable`
+`#`
+`//`
+`puts`
+`console.log`
+`irb`
+`binding.pry`
+`debug`
+
+
+
 ## Learning Goals
 
 - Build a web basic API with Sinatra and Active Record to support a React
