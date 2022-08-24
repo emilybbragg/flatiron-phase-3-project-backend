@@ -1,4 +1,4 @@
 class Exercise < ActiveRecord::Base
     belongs_to :category
-    belongs_to :exercise_workout
+    has_many :exercise_workouts
 end
