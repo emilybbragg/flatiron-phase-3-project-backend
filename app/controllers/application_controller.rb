@@ -1,5 +1,3 @@
-# controller for all CRUD requests
-
 class ApplicationController < Sinatra::Base
   set :default_content_type, 'application/json'
 
