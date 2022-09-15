@@ -2,6 +2,7 @@
 Don't Sweat It is a single-page application built with a React frontend and A Sinatra backend. This app is designed to help users create and organize workouts.
 
 ### Features and How to Use
+To install dependencies, run bundle install.
 On the Home page, users are greeted with a welcome to the app. Selecting the "Let's go!" button will redirect users to the Exercises page.
 
 On the Exercises page, users can view their current exercises, as well as add new ones. Exercises can be given a name, description, and select from six different categories. Once submitted, the new exercise will appear below previously existing ones. Exercises can be deleted by clicking the "delete" icon.
