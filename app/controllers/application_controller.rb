@@ -8,12 +8,23 @@ class ApplicationController < Sinatra::Base
 
   get '/workouts' do
     workouts = Workout.all
-    workouts.to_json
+    workouts.to_json(include: { exercise_workouts: { include: :exercise } })
+  end
+
+  get '/workouts/:id' do
+    workout = Workout.find(params[:id])
+    workout.to_json(include: { exercise_workouts: { include: :exercise } })
   end
 
   get '/categories' do
     categories = Category.all
     categories.to_json
+  end
+
+  get '/categories/:id' do
+    categories = Category.all
+    categories.to_json(include: :exercises )
+    # add exercise in json statement
   end
 
   get '/exercise-workouts' do
