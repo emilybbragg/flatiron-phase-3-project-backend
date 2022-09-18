@@ -18,13 +18,7 @@ class ApplicationController < Sinatra::Base
 
   get '/categories' do
     categories = Category.all
-    categories.to_json
-  end
-
-  get '/categories/:id' do
-    categories = Category.all
-    categories.to_json(include: :exercises )
-    # add exercise in json statement
+    categories.to_json(include: :exercises)
   end
 
   get '/exercise-workouts' do
